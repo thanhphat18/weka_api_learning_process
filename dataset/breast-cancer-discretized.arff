@@ -1,0 +1,300 @@
+@relation breast-cancer-weka.filters.unsupervised.instance.NonSparseToSparse-weka.filters.unsupervised.attribute.Discretize-V-B4-M-1.0-Rfirst-last-precision6
+
+@attribute age {10-19,20-29,30-39,40-49,50-59,60-69,70-79,80-89,90-99}
+@attribute menopause {lt40,ge40,premeno}
+@attribute tumor-size {0-4,5-9,10-14,15-19,20-24,25-29,30-34,35-39,40-44,45-49,50-54,55-59}
+@attribute inv-nodes {0-2,3-5,6-8,9-11,12-14,15-17,18-20,21-23,24-26,27-29,30-32,33-35,36-39}
+@attribute node-caps {yes,no}
+@attribute deg-malig {1,2,3}
+@attribute breast {left,right}
+@attribute breast-quad {left_up,left_low,right_up,right_low,central}
+@attribute irradiat {yes,no}
+@attribute Class {no-recurrence-events,recurrence-events}
+
+@data
+{0 40-49,1 premeno,2 15-19,5 3,6 right,8 no,9 recurrence-events}
+{0 50-59,1 ge40,2 15-19,4 no,6 right,7 central,8 no}
+{0 50-59,1 ge40,2 35-39,4 no,5 2,7 left_low,8 no,9 recurrence-events}
+{0 40-49,1 premeno,2 35-39,5 3,6 right,7 left_low}
+{0 40-49,1 premeno,2 30-34,3 3-5,5 2,7 right_up,8 no,9 recurrence-events}
+{0 50-59,1 premeno,2 25-29,3 3-5,4 no,5 2,6 right}
+{0 50-59,1 ge40,2 40-44,4 no,5 3,8 no}
+{0 40-49,1 premeno,2 10-14,4 no,5 2,8 no}
+{0 40-49,1 premeno,4 no,5 2,6 right,7 right_low,8 no}
+{0 40-49,1 ge40,2 40-44,3 15-17,5 2,6 right}
+{0 50-59,1 premeno,2 25-29,4 no,5 2,7 left_low,8 no}
+{0 60-69,1 ge40,2 15-19,4 no,5 2,6 right,8 no}
+{0 50-59,1 ge40,2 30-34,4 no,6 right,7 central,8 no}
+{0 50-59,1 ge40,2 25-29,4 no,5 2,6 right,8 no}
+{0 40-49,1 premeno,2 25-29,4 no,5 2,7 left_low,9 recurrence-events}
+{0 30-39,1 premeno,2 20-24,4 no,5 3,7 central,8 no}
+{0 50-59,1 premeno,2 10-14,3 3-5,4 no,6 right,8 no}
+{0 60-69,1 ge40,2 15-19,4 no,5 2,6 right,8 no}
+{0 50-59,1 premeno,2 40-44,4 no,5 2,8 no}
+{0 50-59,1 ge40,2 20-24,4 no,5 3,8 no}
+{0 50-59,2 20-24,4 ?,7 left_low,8 no,9 recurrence-events}
+{0 60-69,1 ge40,2 40-44,3 3-5,4 no,5 2,6 right}
+{0 50-59,1 ge40,2 15-19,4 no,5 2,6 right,7 left_low,8 no}
+{0 40-49,1 premeno,2 10-14,4 no,6 right,8 no}
+{0 30-39,1 premeno,2 15-19,3 6-8,5 3,7 left_low,9 recurrence-events}
+{0 50-59,1 ge40,2 20-24,3 3-5,5 2,6 right,8 no}
+{0 50-59,1 ge40,2 10-14,4 no,5 2,6 right,7 left_low,8 no}
+{0 40-49,1 premeno,2 10-14,4 no,6 right,8 no}
+{0 60-69,1 ge40,2 30-34,3 3-5,5 3,7 left_low,8 no}
+{0 40-49,1 premeno,2 15-19,3 15-17,5 3,7 left_low,8 no,9 recurrence-events}
+{0 60-69,1 ge40,2 30-34,4 no,5 3,6 right,7 central,8 no,9 recurrence-events}
+{0 60-69,1 ge40,2 25-29,3 3-5,4 ?,6 right,7 left_low}
+{0 50-59,1 ge40,2 25-29,4 no,5 3,7 right_up,8 no}
+{0 50-59,1 ge40,2 20-24,4 no,5 3,6 right,8 no}
+{0 40-49,1 premeno,2 30-34,4 no,7 left_low,9 recurrence-events}
+{0 30-39,1 premeno,2 15-19,4 no,7 left_low,8 no}
+{0 40-49,1 premeno,2 10-14,4 no,5 2,6 right,8 no}
+{0 60-69,1 ge40,2 45-49,3 6-8,5 3,7 central,8 no}
+{0 40-49,1 ge40,2 20-24,4 no,5 3,7 left_low,8 no}
+{0 40-49,1 premeno,2 10-14,4 no,6 right,7 right_low,8 no}
+{0 30-39,1 premeno,2 35-39,4 no,5 3,7 left_low,8 no,9 recurrence-events}
+{0 40-49,1 premeno,2 35-39,3 9-11,5 2,6 right,7 right_up}
+{0 60-69,1 ge40,2 25-29,4 no,5 2,6 right,7 left_low,8 no}
+{0 50-59,1 ge40,2 20-24,3 3-5,5 3,6 right,7 right_up,8 no,9 recurrence-events}
+{0 30-39,1 premeno,2 15-19,4 no,7 left_low,8 no}
+{0 50-59,1 premeno,2 30-34,4 no,5 3,7 right_up,8 no,9 recurrence-events}
+{0 60-69,1 ge40,2 10-14,4 no,5 2,6 right}
+{0 40-49,1 premeno,2 35-39,5 3,6 right}
+{0 50-59,1 premeno,2 50-54,5 2,6 right}
+{0 50-59,1 ge40,2 40-44,4 no,5 3,6 right,8 no}
+{0 70-79,1 ge40,2 15-19,3 9-11,4 ?,7 left_low,9 recurrence-events}
+{0 50-59,2 30-34,4 no,5 3,6 right,8 no}
+{0 40-49,1 premeno,4 no,5 3,7 central,8 no}
+{0 70-79,1 ge40,2 40-44,4 no,6 right,7 right_up,8 no}
+{0 40-49,1 premeno,2 25-29,4 ?,5 2,7 right_low}
+{0 50-59,1 ge40,2 25-29,3 15-17,5 3,6 right,8 no}
+{0 50-59,1 premeno,2 20-24,4 no,7 left_low,8 no}
+{0 50-59,1 ge40,2 35-39,3 15-17,4 no,5 3,7 left_low,8 no}
+{0 50-59,1 ge40,2 50-54,4 no,6 right,7 right_up,8 no}
+{0 30-39,1 premeno,4 no,5 2,6 right,7 central,8 no,9 recurrence-events}
+{0 50-59,1 ge40,2 40-44,3 6-8,5 3,7 left_low,9 recurrence-events}
+{0 40-49,1 premeno,2 30-34,4 no,5 2,6 right,7 right_up}
+{0 40-49,1 ge40,2 20-24,4 no,5 3,8 no}
+{0 40-49,1 premeno,2 30-34,3 15-17,5 3,7 left_low,8 no,9 recurrence-events}
+{0 40-49,1 ge40,2 20-24,4 no,5 2,6 right,8 no,9 recurrence-events}
+{0 50-59,1 ge40,2 15-19,4 no,6 right,7 central,8 no}
+{0 30-39,1 premeno,2 25-29,4 no,5 2,6 right,7 left_low,8 no}
+{0 60-69,1 ge40,2 15-19,4 no,5 2,7 left_low,8 no}
+{0 50-59,1 premeno,2 50-54,3 9-11,5 2,6 right,8 no,9 recurrence-events}
+{0 30-39,1 premeno,2 10-14,4 no,6 right,7 left_low,8 no}
+{0 50-59,1 premeno,2 25-29,3 3-5,5 3,7 left_low,9 recurrence-events}
+{0 60-69,1 ge40,2 25-29,3 3-5,4 ?,6 right}
+{0 60-69,1 ge40,2 10-14,4 no,6 right,7 left_low,8 no}
+{0 50-59,1 ge40,2 30-34,3 6-8,5 3,7 right_low,8 no,9 recurrence-events}
+{0 30-39,1 premeno,2 25-29,3 6-8,5 3,7 right_low,9 recurrence-events}
+{0 50-59,1 ge40,2 10-14,4 no,7 left_low,8 no}
+{0 50-59,1 premeno,2 15-19,4 no,7 left_low,8 no}
+{0 40-49,1 premeno,2 25-29,4 no,5 2,6 right,7 central,8 no}
+{0 40-49,1 premeno,2 25-29,4 no,5 3,7 right_up,8 no,9 recurrence-events}
+{0 60-69,1 ge40,2 30-34,3 6-8,5 2,6 right,7 right_up,8 no}
+{0 50-59,2 15-19,4 no,5 2,7 left_low,8 no}
+{0 40-49,1 premeno,2 25-29,4 no,5 2,6 right,7 left_low,8 no}
+{0 40-49,1 premeno,2 30-34,4 no,6 right,8 no}
+{0 60-69,1 ge40,2 15-19,4 no,5 2}
+{0 30-39,1 premeno,4 no,5 2,6 right,7 central,8 no}
+{0 50-59,1 ge40,2 35-39,4 no,5 3,8 no}
+{0 40-49,1 premeno,2 40-44,4 no,6 right,8 no}
+{0 30-39,1 premeno,2 25-29,3 6-8,5 2,6 right}
+{0 50-59,1 ge40,2 20-24,4 no,6 right,7 left_low,8 no}
+{0 50-59,1 ge40,2 30-34,4 no,8 no}
+{0 60-69,1 ge40,2 20-24,4 no,6 right,8 no,9 recurrence-events}
+{0 30-39,1 premeno,2 30-34,3 3-5,4 no,5 3,6 right,9 recurrence-events}
+{0 50-59,2 20-24,4 ?,8 no,9 recurrence-events}
+{0 50-59,1 premeno,2 10-14,4 no,5 2,6 right,8 no}
+{0 50-59,1 ge40,2 20-24,4 no,5 2,6 right,8 no}
+{0 40-49,1 premeno,2 45-49,4 no,5 2,7 left_low}
+{0 30-39,1 premeno,2 40-44,4 no,8 no,9 recurrence-events}
+{0 50-59,1 premeno,2 10-14,4 no,7 left_low,8 no}
+{0 60-69,1 ge40,2 30-34,4 no,5 3,6 right,9 recurrence-events}
+{0 40-49,1 premeno,2 35-39,4 no,6 right,8 no,9 recurrence-events}
+{0 40-49,1 premeno,2 20-24,3 3-5,5 2,7 left_low,9 recurrence-events}
+{0 50-59,1 premeno,2 15-19,4 no,5 2,7 left_low,8 no,9 recurrence-events}
+{0 50-59,1 ge40,2 30-34,4 no,5 3,6 right,7 left_low,8 no}
+{0 60-69,1 ge40,2 20-24,4 no,5 2,8 no}
+{0 40-49,1 premeno,2 20-24,4 no,7 right_low,8 no}
+{0 60-69,1 ge40,2 30-34,3 3-5,5 2,7 central,9 recurrence-events}
+{0 60-69,1 ge40,2 20-24,3 3-5,4 no,5 2,7 left_low,9 recurrence-events}
+{0 50-59,1 premeno,2 25-29,4 no,5 2,7 right_up,8 no,9 recurrence-events}
+{0 50-59,1 ge40,2 30-34,4 no,6 right,7 right_up,8 no}
+{0 40-49,1 premeno,2 20-24,4 no,5 2,7 right_low,8 no}
+{0 60-69,1 ge40,2 15-19,4 no,6 right,8 no}
+{0 60-69,1 ge40,2 30-34,4 no,5 2,7 left_low}
+{0 30-39,1 premeno,2 30-34,4 no,5 2,8 no}
+{0 30-39,1 premeno,2 40-44,3 3-5,4 no,5 3,6 right,7 right_up}
+{0 60-69,1 ge40,2 5-9,4 no,7 central,8 no}
+{0 60-69,1 ge40,2 10-14,4 no,8 no}
+{0 40-49,1 premeno,2 30-34,3 6-8,5 3,6 right,8 no,9 recurrence-events}
+{0 60-69,1 ge40,2 10-14,4 no,8 no}
+{0 40-49,1 premeno,2 35-39,3 9-11,5 2,6 right}
+{0 40-49,1 premeno,2 20-24,4 no,6 right,7 left_low,8 no}
+{0 40-49,1 premeno,2 30-34,5 3,6 right,7 right_up,8 no,9 recurrence-events}
+{0 50-59,1 premeno,2 25-29,5 2,8 no}
+{0 40-49,1 premeno,2 15-19,4 no,5 2,7 left_low,8 no}
+{0 30-39,1 premeno,2 35-39,3 9-11,5 3,7 left_low,8 no,9 recurrence-events}
+{0 30-39,1 premeno,2 10-14,4 no,5 2,7 right_low,8 no}
+{0 50-59,1 ge40,2 30-34,4 no,6 right,7 left_low,8 no}
+{0 60-69,1 ge40,2 30-34,4 no,5 2,8 no}
+{0 60-69,1 ge40,2 25-29,4 no,5 2,7 left_low,8 no}
+{0 40-49,1 premeno,2 15-19,4 no,5 2,8 no,9 recurrence-events}
+{0 60-69,1 ge40,2 15-19,4 no,5 2,6 right,7 left_low,8 no}
+{0 40-49,1 premeno,2 30-34,4 no,5 2,7 right_low,8 no}
+{0 20-29,1 premeno,2 35-39,4 no,5 2,6 right,7 right_up,8 no}
+{0 40-49,1 premeno,2 30-34,4 no,5 3,6 right,7 right_up,8 no,9 recurrence-events}
+{0 40-49,1 premeno,2 25-29,4 no,5 2,6 right,7 left_low,8 no,9 recurrence-events}
+{0 30-39,1 premeno,2 30-34,4 no,5 3,7 left_low,8 no}
+{0 30-39,1 premeno,2 15-19,4 no,6 right,7 left_low,8 no,9 recurrence-events}
+{0 50-59,1 ge40,4 no,6 right,7 central,8 no}
+{0 50-59,1 ge40,4 no,7 left_low,8 no}
+{0 60-69,1 ge40,2 50-54,4 no,5 3,6 right,8 no,9 recurrence-events}
+{0 50-59,1 premeno,2 30-34,4 no,7 central,8 no}
+{0 60-69,1 ge40,2 20-24,3 24-26,5 3,7 left_low,9 recurrence-events}
+{0 40-49,1 premeno,2 25-29,4 no,5 2,8 no}
+{0 40-49,1 premeno,2 30-34,3 3-5,4 no,5 2,6 right,8 no,9 recurrence-events}
+{0 50-59,1 premeno,2 20-24,3 3-5,5 2,7 left_low,8 no}
+{0 50-59,1 ge40,2 15-19,5 2,7 central}
+{0 50-59,1 premeno,2 10-14,4 no,5 3,7 left_low,8 no}
+{0 30-39,1 premeno,2 30-34,3 9-11,4 no,5 2,6 right,9 recurrence-events}
+{0 60-69,1 ge40,2 10-14,4 no,7 left_low,8 no}
+{0 40-49,1 premeno,2 40-44,4 no,5 2,6 right,7 left_low,8 no}
+{0 50-59,1 ge40,2 30-34,3 9-11,4 ?,5 3}
+{0 40-49,1 premeno,2 50-54,4 no,5 2,6 right,7 left_low,9 recurrence-events}
+{0 50-59,1 ge40,2 15-19,4 no,5 2,6 right,7 right_up,8 no}
+{0 50-59,1 ge40,2 40-44,3 3-5,5 2,7 left_low,8 no}
+{0 30-39,1 premeno,2 25-29,3 3-5,5 3,7 left_low,9 recurrence-events}
+{0 60-69,1 ge40,2 10-14,4 no,5 2,7 left_low,8 no}
+{0 60-69,2 10-14,4 no,7 right_up,8 no}
+{0 30-39,1 premeno,2 30-34,4 no,5 2,8 no,9 recurrence-events}
+{0 30-39,1 premeno,2 20-24,3 3-5,5 2,7 left_low,8 no,9 recurrence-events}
+{0 50-59,1 ge40,2 10-14,4 no,6 right,8 no}
+{0 60-69,1 ge40,2 25-29,4 no,5 3,6 right,8 no}
+{0 50-59,1 ge40,2 25-29,3 3-5,5 3,6 right,8 no}
+{0 40-49,1 premeno,2 30-34,3 6-8,4 no,5 2,8 no}
+{0 60-69,1 ge40,2 50-54,4 no,5 2,7 left_low,8 no}
+{0 50-59,1 premeno,2 30-34,4 no,5 3,7 left_low,8 no}
+{0 40-49,1 ge40,2 20-24,3 3-5,4 no,5 3,6 right,7 left_low,9 recurrence-events}
+{0 50-59,1 ge40,2 30-34,3 6-8,5 2,7 right_low,9 recurrence-events}
+{0 60-69,1 ge40,2 25-29,3 3-5,4 no,5 2,6 right,7 right_up,8 no,9 recurrence-events}
+{0 40-49,1 premeno,2 20-24,4 no,5 2,7 central,8 no}
+{0 40-49,1 premeno,2 20-24,4 no,5 2,8 no}
+{0 40-49,1 premeno,2 50-54,4 no,5 2,7 left_low,8 no}
+{0 50-59,1 ge40,2 20-24,4 no,5 2,6 right,7 central,8 no,9 recurrence-events}
+{0 50-59,1 ge40,2 30-34,3 3-5,4 no,5 3,6 right,8 no,9 recurrence-events}
+{0 40-49,1 ge40,2 25-29,4 no,5 2,7 left_low,8 no}
+{0 50-59,1 premeno,2 25-29,4 no,6 right,8 no,9 recurrence-events}
+{0 40-49,1 premeno,2 40-44,3 3-5,5 3,6 right}
+{0 40-49,1 premeno,2 20-24,4 no,5 2,6 right,8 no}
+{0 40-49,1 premeno,2 20-24,3 3-5,4 no,5 2,6 right,8 no}
+{0 40-49,1 premeno,2 25-29,3 9-11,5 3,6 right,8 no,9 recurrence-events}
+{0 40-49,1 premeno,2 25-29,4 no,5 2,6 right,7 left_low,8 no,9 recurrence-events}
+{0 40-49,1 premeno,2 20-24,4 no,6 right,7 right_up,8 no}
+{0 30-39,1 premeno,2 40-44,4 no,5 2,6 right,7 right_up,8 no}
+{0 60-69,1 ge40,2 10-14,3 6-8,5 3,9 recurrence-events}
+{0 40-49,1 premeno,2 35-39,4 no,7 left_low,8 no}
+{0 50-59,1 ge40,2 30-34,3 3-5,4 no,5 3,7 left_low,8 no,9 recurrence-events}
+{0 40-49,1 premeno,2 5-9,4 no,7 left_low}
+{0 60-69,1 ge40,2 15-19,4 no,7 right_low,8 no}
+{0 40-49,1 premeno,2 30-34,4 no,5 3,6 right,7 right_up,8 no}
+{0 40-49,1 premeno,2 25-29,4 no,5 3,8 no,9 recurrence-events}
+{0 50-59,1 ge40,2 5-9,4 no,5 2,6 right,7 right_up,8 no}
+{0 50-59,1 premeno,2 25-29,4 no,5 2,6 right,7 right_low,8 no}
+{0 50-59,1 premeno,2 25-29,4 no,5 2,7 right_up,8 no,9 recurrence-events}
+{0 40-49,1 premeno,2 10-14,4 no,5 2,7 left_low}
+{0 60-69,1 ge40,2 35-39,3 6-8,5 3,7 left_low,8 no,9 recurrence-events}
+{0 60-69,1 ge40,2 50-54,4 no,5 2,6 right}
+{0 40-49,1 premeno,2 25-29,4 no,5 2,6 right,8 no}
+{0 30-39,1 premeno,2 20-24,3 3-5,4 no,5 2,6 right,7 central,8 no}
+{0 30-39,1 premeno,2 30-34,4 no,6 right,8 no,9 recurrence-events}
+{0 60-69,2 30-34,4 no,7 left_low,8 no}
+{0 40-49,1 premeno,2 15-19,3 12-14,4 no,5 3,6 right,7 right_low}
+{0 60-69,1 ge40,2 20-24,4 no,5 3,6 right,7 left_low,8 no,9 recurrence-events}
+{0 30-39,1 premeno,2 5-9,4 no,5 2,7 right_low,8 no}
+{0 40-49,1 premeno,2 30-34,4 no,5 3,8 no}
+{0 60-69,1 ge40,2 30-34,4 no,5 3,7 left_low,8 no}
+{0 40-49,1 premeno,2 25-29,4 no,6 right,7 right_low,8 no}
+{0 40-49,1 premeno,2 25-29,4 no,7 right_low,8 no}
+{0 60-69,1 ge40,2 40-44,3 3-5,5 3,6 right,7 left_low,8 no,9 recurrence-events}
+{0 50-59,1 ge40,2 25-29,4 no,5 2,7 left_low,8 no}
+{0 50-59,1 premeno,2 30-34,4 no,5 3,6 right,9 recurrence-events}
+{0 40-49,1 ge40,2 30-34,3 3-5,4 no,5 3,7 left_low,8 no,9 recurrence-events}
+{0 40-49,1 premeno,2 25-29,4 no,6 right,7 left_low}
+{0 40-49,1 ge40,2 25-29,3 12-14,5 3,7 right_low,9 recurrence-events}
+{0 40-49,1 premeno,2 40-44,4 no,7 left_low,8 no,9 recurrence-events}
+{0 40-49,1 premeno,2 20-24,4 no,5 2,7 left_low,8 no}
+{0 50-59,1 ge40,2 25-29,4 no,7 right_low,8 no}
+{0 40-49,1 premeno,2 20-24,4 no,5 2,6 right,8 no}
+{0 70-79,1 ge40,2 40-44,4 no,6 right,8 no}
+{0 60-69,1 ge40,2 25-29,4 no,5 3,8 no,9 recurrence-events}
+{0 50-59,1 premeno,2 25-29,4 no,5 2,7 left_low,8 no}
+{0 60-69,1 ge40,2 45-49,4 no,6 right,7 right_up,9 recurrence-events}
+{0 50-59,1 ge40,2 20-24,5 2,6 right,8 no}
+{0 50-59,1 ge40,2 25-29,4 no,7 left_low,8 no}
+{0 50-59,1 ge40,2 20-24,4 no,5 3,8 no}
+{0 40-49,1 premeno,2 20-24,3 3-5,4 no,5 2,6 right,7 left_low,8 no}
+{0 50-59,1 ge40,2 35-39,4 no,5 2,8 no}
+{0 30-39,1 premeno,2 20-24,4 no,5 3,9 recurrence-events}
+{0 60-69,1 ge40,2 30-34,4 no,6 right,8 no}
+{0 60-69,1 ge40,2 25-29,4 no,5 3,6 right,7 left_low,8 no}
+{0 40-49,1 ge40,2 30-34,4 no,5 2}
+{0 30-39,1 premeno,2 25-29,4 no,5 2,7 left_low,8 no}
+{0 40-49,1 premeno,2 20-24,4 no,5 2,7 left_low,8 no,9 recurrence-events}
+{0 30-39,1 premeno,2 20-24,4 no,5 2,7 right_low,8 no}
+{0 40-49,1 premeno,2 10-14,4 no,5 2,6 right,7 left_low,8 no}
+{0 50-59,1 premeno,2 15-19,4 no,5 2,6 right,7 right_low,8 no}
+{0 50-59,1 premeno,2 25-29,4 no,6 right,8 no}
+{0 60-69,1 ge40,2 20-24,4 no,5 2,6 right,8 no}
+{0 60-69,1 ge40,2 40-44,4 no,5 2,6 right,7 left_low,8 no,9 recurrence-events}
+{0 30-39,2 15-19,4 no,5 3,6 right,8 no}
+{0 40-49,1 premeno,2 30-34,3 12-14,5 3,9 recurrence-events}
+{0 60-69,1 ge40,2 30-34,5 2,6 right,7 right_up,9 recurrence-events}
+{0 50-59,1 ge40,2 40-44,3 6-8,5 3,7 left_low,9 recurrence-events}
+{0 50-59,1 ge40,2 30-34,4 no,5 3,7 ?,8 no,9 recurrence-events}
+{0 70-79,1 ge40,2 10-14,4 no,5 2,7 central,8 no}
+{0 30-39,1 premeno,2 40-44,4 no,5 2,7 left_low}
+{0 40-49,1 premeno,2 30-34,4 no,5 2,6 right,7 right_low,8 no}
+{0 40-49,1 premeno,2 30-34,4 no,7 left_low,8 no}
+{0 60-69,1 ge40,2 15-19,4 no,5 2,7 left_low,8 no}
+{0 40-49,1 premeno,2 10-14,4 no,5 2,7 left_low,8 no}
+{0 60-69,1 ge40,2 20-24,4 no,7 left_low,8 no}
+{0 50-59,1 ge40,2 10-14,4 no,8 no}
+{0 50-59,1 premeno,2 25-29,4 no,7 left_low,8 no}
+{0 50-59,1 ge40,2 30-34,3 9-11,5 3,7 right_low,9 recurrence-events}
+{0 50-59,1 ge40,2 10-14,4 no,5 2,7 left_low,8 no}
+{0 40-49,1 premeno,2 30-34,4 no,7 right_up,8 no}
+{0 70-79,1 ge40,4 no,7 right_low,8 no}
+{0 40-49,1 premeno,2 25-29,4 no,5 3,6 right}
+{0 50-59,1 premeno,2 25-29,4 no,5 3,6 right,7 left_low,9 recurrence-events}
+{0 50-59,1 ge40,2 40-44,4 no,5 2,7 left_low,8 no}
+{0 60-69,1 ge40,2 25-29,4 no,5 3,7 right_low,9 recurrence-events}
+{0 40-49,1 premeno,2 30-34,3 3-5,5 2,6 right,7 left_low,8 no}
+{0 50-59,1 ge40,2 20-24,4 no,5 2,8 no,9 recurrence-events}
+{0 70-79,1 ge40,2 20-24,4 no,5 3,8 no}
+{0 30-39,1 premeno,2 25-29,4 no,7 central,8 no}
+{0 60-69,1 ge40,2 30-34,4 no,5 2,7 left_low,8 no}
+{0 40-49,1 premeno,2 20-24,3 3-5,5 2,6 right,7 right_up,9 recurrence-events}
+{0 50-59,1 ge40,2 30-34,3 9-11,4 ?,5 3,7 left_low}
+{0 50-59,1 ge40,4 no,5 2,7 central,8 no}
+{0 40-49,1 premeno,2 20-24,4 no,5 3,6 right,7 left_low}
+{0 30-39,1 premeno,2 35-39,4 no,5 3,7 left_low,8 no,9 recurrence-events}
+{0 60-69,1 ge40,2 30-34,4 no,8 no}
+{0 60-69,1 ge40,2 20-24,4 no,7 left_low,8 no}
+{0 50-59,1 ge40,2 25-29,3 6-8,4 no,5 3,7 left_low,9 recurrence-events}
+{0 50-59,1 premeno,2 35-39,3 15-17,5 3,6 right,7 right_up,8 no,9 recurrence-events}
+{0 30-39,1 premeno,2 20-24,3 3-5,5 2,6 right}
+{0 40-49,1 premeno,2 20-24,3 6-8,4 no,5 2,6 right,7 left_low}
+{0 50-59,1 ge40,2 35-39,4 no,5 3,7 left_low,8 no}
+{0 50-59,1 premeno,2 35-39,4 no,5 2,6 right,8 no}
+{0 40-49,1 premeno,2 25-29,4 no,5 2}
+{0 40-49,1 premeno,2 35-39,4 no,5 2,6 right,7 right_up,8 no}
+{0 50-59,1 premeno,2 30-34,3 3-5,5 2,7 left_low}
+{0 40-49,1 premeno,2 20-24,4 no,5 2,6 right,7 right_up,8 no}
+{0 60-69,1 ge40,2 15-19,4 no,5 3,6 right}
+{0 50-59,1 ge40,2 30-34,3 6-8,5 2,7 left_low,8 no}
+{0 50-59,1 premeno,2 25-29,3 3-5,5 2,7 left_low}
+{0 30-39,1 premeno,2 30-34,3 6-8,5 2,6 right,7 right_up,8 no}
+{0 50-59,1 premeno,2 15-19,4 no,5 2,6 right,7 left_low,8 no}
+{0 50-59,1 ge40,2 40-44,4 no,5 3,7 right_up,8 no}
