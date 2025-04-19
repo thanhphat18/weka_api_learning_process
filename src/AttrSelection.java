@@ -16,7 +16,14 @@ public class AttrSelection {
         //create AttributeSelection object
         AttributeSelection filter = new AttributeSelection();
         //create evaluator and search algorithms objs
+        /*
+         * CfsSubsetEval: Evaluates attribute subsets by measuring the correlation between attributes and the class.
+         *   Keeps attributes that are highly correlated with the class but not correlated with each other.
+         */
         CfsSubsetEval eval = new CfsSubsetEval();
+        /*
+         * GreedyStepwise (backward): Starts with all attributes, and removes one by one if it improves the evaluation score.
+         */
         GreedyStepwise search = new GreedyStepwise();
         //set the algorithms to search backward
         search.setSearchBackwards(true);
